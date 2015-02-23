@@ -20,6 +20,10 @@ To use this theme, just add this line to inside your <head> element:
 
     <link rel="stylesheet" href="http://bootstrap.bbcnewslabs.co.uk/dist/css/bootstrap.css"/>
 
+Or, to add this theme to your project with Bower:
+
+    bower install https://github.com/BBC-News-Labs/bbcnewslabs-bootstrap.git#master
+    
 # Other useful resources
 
 For JavaScript support - needed by some interactive elements - you will probably also want to include Bootstrap JavaScript (which requires jQuery).
