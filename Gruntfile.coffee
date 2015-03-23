@@ -38,6 +38,7 @@ module.exports = (grunt) ->
         options:
           port: grunt.option('port') || '8000'
           hostname: grunt.option('host') || 'localhost'
+          keepalive: true
     assemble:
       pages:
         options:

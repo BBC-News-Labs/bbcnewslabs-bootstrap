@@ -25,17 +25,16 @@ body {
 /* Use heading style similar to BBC News responsive beta */
 h1,
 h2,
-h3,
-.panel-heading {
+h3 {
     font-weight: bold;
     letter-spacing: -1px;
     color: #505050;
 }
 
-.panel-heading {
-    font-size: 1.846em;
-    line-height: 1.846em;
-    padding: 0px 10px;
+.panel-heading h3 {
+    padding: 0px 5px;
+    margin: 0;
+    color: inherit;
 }
 
 .list-group-item.active .list-group-item-text,
@@ -59,11 +58,12 @@ pre,
     border-radius: 0 !important;
 }
 
-.jumbotron {
-    padding: 20px 20px;
+.page-heading {
+    padding: 20px;
+    padding-bottom: 0;
 }
 
-.jumbotron h1 {
+.page-heading h1 {
     margin: 0;
     color: #000;
     font-weight: 300;
@@ -110,26 +110,22 @@ table th {
   background-color: #fff;
 }
 
-@media (max-width: 767px) {
-    
-        /* Center title on mobile */
-        .navbar .navbar-brand {
-            text-align: center;
-            width: 100%;
-            position: absolute;
-        }
-        
-        /* Have hamburger menu display on top of title */
-        .navbar .navbar-toggle {
-            z-index: 100;
-        }
+.text-danger {
+    color: @state-danger-bg;
+}
+.text-warning {
+    color: @state-warning-bg;
+}
+.text-info {
+    color: @state-info-bg;
+}
+.text-success {
+    color: @state-success-bg;
+}
 
-        .navbar .dropdown-header {
-            color: #fff;
-            opacity: 0.75;
-        }
-    
-        .navbar .navbar-brand:hover {
-            background: transparent;
-        }
+@media (max-width: 767px) {    
+    /* Disabled navbar dropdown items on mobile */
+    .navbar .dropdown-header {
+        color: #fff;
+    }
 }
