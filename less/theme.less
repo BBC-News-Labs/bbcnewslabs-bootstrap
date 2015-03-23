@@ -43,6 +43,7 @@ h3 {
 }
 
 /* Remove rounded corners from buttons and most other interface elements */
+.navbar,
 code,
 pre,
 .form-control,
@@ -54,6 +55,7 @@ pre,
 .well,
 .label,
 .input-group-addon,
+.alert,
 .btn {
     border-radius: 0 !important;
 }
@@ -74,21 +76,35 @@ pre,
     font-weight: 600;
 }
 
-table tr.info,
-table tr.success,
-table tr.warning,
-table tr.danger {
-    color: #fff;
+/* Alert text style */
+.text-danger {
+    color: @state-danger-bg;
 }
-
+.text-warning {
+    color: @state-warning-bg;
+}
+.text-info {
+    color: @state-info-bg;
+}
+.text-success {
+    color: @state-success-bg;
+}
 a.alert-link {
     text-decoration: underline;
     color: #fff !important;
 }
 
+/* Table styles */
 table th {
     background: #ededed;
     font-weight: normal;
+}
+
+table tr.info,
+table tr.success,
+table tr.warning,
+table tr.danger {
+    color: #fff;
 }
 
 /* Navbar apperance overrides */
@@ -102,25 +118,14 @@ table th {
 .navbar .navbar-toggle {
     border-color: transparent;
 }
+
 .navbar .navbar-toggle:hover,
 .navbar .navbar-toggle:focus {
     background-color: transparent;
 }
+
 .navbar .navbar-toggle .icon-bar {
   background-color: #fff;
-}
-
-.text-danger {
-    color: @state-danger-bg;
-}
-.text-warning {
-    color: @state-warning-bg;
-}
-.text-info {
-    color: @state-info-bg;
-}
-.text-success {
-    color: @state-success-bg;
 }
 
 @media (max-width: 767px) {    

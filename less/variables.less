@@ -17,11 +17,11 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #cc0101;;
-@brand-success:         #5cb85c;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #000000;
-@brand-info:            #3776C8;
+@brand-primary:         #cc0101;
+@brand-success:         #45c63a;
+@brand-warning:         #ff9900;
+@brand-danger:          #ff003a;
+@brand-info:            #006cff;
 
 //== Scaffolding
 //
@@ -156,19 +156,19 @@
 
 @btn-success-color:              #fff;
 @btn-success-bg:                 @brand-success;
-@btn-success-border:             lighten(@btn-primary-bg, 20%);
+@btn-success-border:             lighten(@btn-success-bg, 20%);
 
 @btn-info-color:                 #fff;
 @btn-info-bg:                    @brand-info;
-@btn-info-border:                lighten(@btn-primary-bg, 20%);
+@btn-info-border:                lighten(@btn-info-bg, 20%);
 
 @btn-warning-color:              #fff;
 @btn-warning-bg:                 @brand-warning;
-@btn-warning-border:             lighten(@btn-primary-bg, 20%);
+@btn-warning-border:             lighten(@btn-warning-bg, 20%);
 
 @btn-danger-color:               #fff;
 @btn-danger-bg:                  @brand-danger;
-@btn-danger-border:              lighten(@btn-primary-bg, 20%);
+@btn-danger-border:              lighten(@btn-danger-bg, 20%);
 
 @btn-link-disabled-color:        @gray-light;
 
@@ -488,19 +488,19 @@
 //## Define colors for form feedback states and, by default, alerts.
 
 @state-warning-text:             #fff;
-@state-warning-bg:               #EEA345;
+@state-warning-bg:               @brand-warning;
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 3%);
 
 @state-danger-text:              #fff;
-@state-danger-bg:                #b94a48;
+@state-danger-bg:                @brand-danger;
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 3%);
 
 @state-success-text:             #fff;
-@state-success-bg:               #468847;
+@state-success-bg:               @brand-success;
 @state-success-border:           darken(spin(@state-success-bg, -10), 5%);
 
 @state-info-text:                #fff;
-@state-info-bg:                  #3776C8;
+@state-info-bg:                  @brand-info;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
 
